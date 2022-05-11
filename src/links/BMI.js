@@ -13,11 +13,11 @@ export default function BMI({height, weight, setHeight, setWeight}){
         setResult(res => res = (Number(weight)/ Math.pow((Number(height)/100),2)).toFixed(2))
 
     }
-    console.log(result, typeof result)
+
     return(
         <form onSubmit={handleFormSubmit}>
 
-            <p>tu będzie Bmi</p>
+
             <input type="number" value={weight} onChange={handleWeightInput} placeholder="Wpisz swoją wagę w kilogramach"/>
             <input type="number" value={height} onChange={handleHeightInput} placeholder="Wpisz swój wzrost w centymetrach"/>
 
