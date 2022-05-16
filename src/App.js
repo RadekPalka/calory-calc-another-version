@@ -35,7 +35,10 @@ function App() {
         {
             link: "links/cpm",
             title: "cpm",
-            component: <CPM/>
+            component: <CPM weight={weight} setWeight={setWeight}
+                            height={height} setHeight={setHeight}
+                            age={age} setAge={setAge}
+                            sex={sex} setSex={setSex}/>
         },
 
     ]
