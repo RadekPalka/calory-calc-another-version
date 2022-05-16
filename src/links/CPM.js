@@ -13,7 +13,7 @@ export default function CPM(props){
         // PPM (kobiety) = SWE (spoczynkowy wydatek energetyczny kcal) = 655,1 + (9,563 x masa ciała [kg]) + (1,85 x wzrost [cm]) – (4,676 x [wiek])
         // PPM (mężczyźni) = SWE (spoczynkowy wydatek energetyczny kcal) = 66,5 + (13,75 x masa ciała [kg]) + (5,003 x wzrost [cm]) – (6,775 x [wiek])
         e.preventDefault()
-        if (!weight || !height || !age || !sex){
+        if (!weight || !height || !age || !sex || !pal){
             return alert("Nie wypełniłeś formularza")
         }
         if (sex ==="woman"){
