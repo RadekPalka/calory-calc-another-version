@@ -14,16 +14,23 @@ function App() {
 
     const [weight, setWeight] = useState('')
     const [height, setHeight] = useState('')
+    const [age, setAge] = useState('')
+    const [sex, setSex] = useState('')
     const links = [
         {
             link: "links/bmi",
             title: "bmi",
-            component: <BMI weight={weight} setWeight={setWeight} height={height} setHeight={setHeight}/>
+            component: <BMI weight={weight} setWeight={setWeight}
+                            height={height} setHeight={setHeight}/>
         },
         {
             link: "links/ppm",
             title: "ppm",
-            component: <PPM/>
+            component: <PPM weight={weight} setWeight={setWeight}
+                            height={height} setHeight={setHeight}
+                            age={age} setAge={setAge}
+                            sex={sex} setSex={setSex}
+            />
         },
         {
             link: "links/cpm",
