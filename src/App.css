@@ -1,4 +1,35 @@
 body{
-  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #8377D1;
 }
 
+button{
+  display: block;
+  margin-top: 10px;
+  background-color: #6D5A72;
+  color: wheat;
+  transition: background-color 1s, color 1s;
+}
+button:hover{
+  color: #6D5A72;
+  background-color: wheat;
+}
+input{
+  width: 300px;
+}
+ul {
+
+  list-style-type: none;
+
+}
+a{
+  font-weight: bold;
+  text-decoration: none;
+  color: darkslategray;
+  transition: color 1s;
+}
+a:hover{
+  color: wheat;
+}

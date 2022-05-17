@@ -28,10 +28,12 @@ export default function CPM(props){
     return(
         <form onSubmit={handleFormSubmit}>
 
-
-            <input type="number" value={weight} onChange={handleWeightInput} placeholder="Wpisz swoją wagę w kilogramach"/>
-            <input type="number" value={height} onChange={handleHeightInput} placeholder="Wpisz swój wzrost w centymetrach"/>
-            <input type="number" value={age} onChange={handleAgeInput} placeholder="Wpisz swój wiek w latach"/>
+            <p>Wpisz swoją wagę w kilogramach</p>
+            <input type="number" value={weight} onChange={handleWeightInput} />
+            <p>Wpisz swój wzrost w centymetrach</p>
+            <input type="number" value={height} onChange={handleHeightInput} />
+            <p>Wpisz swój wiek w latach</p>
+            <input type="number" value={age} onChange={handleAgeInput} />
             <p>Podaj swoją płeć</p>
             <select name="sex" onChange={handleSelectOption} >
                 <option value="">--Wybierz opcję--</option>
@@ -39,7 +41,7 @@ export default function CPM(props){
                 <option value="man">Mężczyzna</option>
 
             </select>
-
+            <p>Podaj swoją aktywność</p>
             <select onChange={handleSelectPalOption} >
                 {/*Osoby o siedzącym trybie życia, nie uprawiający dodatkowych ćwiczeń fizycznych: 1,21 – 1,27;*/}
                 {/*Osoby wykonujące dodatkową niezbyt intensywną aktywność fizyczną: 1,4-1,5,*/}
@@ -48,11 +50,11 @@ export default function CPM(props){
                 {/*Osoby wykonywujące ciężką pracę fizyczną: 2,0-2,4,*/}
                 {/*W przypadku wykonywania intensywnych ćwiczeń przez przynajmniej 5 dni w tygodniu od 30 do 60 minut wymagane jest zwiększenie założonego współczynnika PAL o 0,3.*/}
                 <option value={0}>Wybierz opcję</option>
-                <option value={1.2}>Osoby o siedzącym trybie życia, nie uprawiający dodatkowych ćwiczeń fizycznych</option>
-                <option value={1.45}>Osoby wykonujące dodatkową niezbyt intensywną aktywność fizyczną</option>
-                <option value={1.65}>Osoby wykonujące pracę wymagającą dodatkowej aktywności fizycznej</option>
-                <option value={1.85}>Osoby wykonujące pracę stojącą</option>
-                <option value={2.2}>Osoby wykonywujące ciężką pracę fizyczną</option>
+                <option value={1.2}>Siedzący tryb życia</option>
+                <option value={1.45}>Mała aktywość fizyczna</option>
+                <option value={1.65}>Średnia aktywność fizyczna</option>
+                <option value={1.85}>Duża aktywność fizyczna</option>
+                <option value={2.2}>Bardzo duża aktywność fizyczna</option>
 
 
             </select>

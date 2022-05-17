@@ -26,10 +26,12 @@ export default function PPM(props){
     return(
         <form onSubmit={handleFormSubmit}>
 
-
-            <input type="number" value={weight} onChange={handleWeightInput} placeholder="Wpisz swoją wagę w kilogramach"/>
-            <input type="number" value={height} onChange={handleHeightInput} placeholder="Wpisz swój wzrost w centymetrach"/>
-            <input type="number" value={age} onChange={handleAgeInput} placeholder="Wpisz swój wiek w latach"/>
+            <p>Wpisz swoją wagę w kilogramach</p>
+            <input type="number" value={weight} onChange={handleWeightInput} />
+            <p>Wpisz swój wzrost w centymetrach</p>
+            <input type="number" value={height} onChange={handleHeightInput} />
+            <p>Wpisz swój wiek w latach</p>
+            <input type="number" value={age} onChange={handleAgeInput} />
             <p>Podaj swoją płeć</p>
             <select name="sex" onChange={handleSelectOption} >
                 <option value="">--Wybierz opcję--</option>

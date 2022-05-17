@@ -51,9 +51,10 @@ export default function BMI({height, weight, setHeight, setWeight}){
     return(
         <form onSubmit={handleFormSubmit}>
 
-
-            <input type="number" value={weight} onChange={handleWeightInput} placeholder="Wpisz swoją wagę w kilogramach"/>
-            <input type="number" value={height} onChange={handleHeightInput} placeholder="Wpisz swój wzrost w centymetrach"/>
+            <p>Wpisz swoją wagę w kilogramach</p>
+            <input type="number" value={weight} onChange={handleWeightInput} />
+            <p>Wpisz swój wzrost w centymetrach</p>
+            <input type="number" value={height} onChange={handleHeightInput} />
 
             <button>Oblicz BMI</button>
             <p className="result">{result  && `Twoje bmi to ${result}`}</p>
