@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/calory-calc-another-version/static/css/main.4671cbea.css",
+    "main.js": "/calory-calc-another-version/static/js/main.41e2eab3.js",
+    "static/js/787.64d9cce7.chunk.js": "/calory-calc-another-version/static/js/787.64d9cce7.chunk.js",
+    "index.html": "/calory-calc-another-version/index.html",
+    "main.4671cbea.css.map": "/calory-calc-another-version/static/css/main.4671cbea.css.map",
+    "main.41e2eab3.js.map": "/calory-calc-another-version/static/js/main.41e2eab3.js.map",
+    "787.64d9cce7.chunk.js.map": "/calory-calc-another-version/static/js/787.64d9cce7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4671cbea.css",
+    "static/js/main.41e2eab3.js"
+  ]
+}
