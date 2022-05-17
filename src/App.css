@@ -33,3 +33,10 @@ a{
 a:hover{
   color: wheat;
 }
+a.active{
+  color:black;
+}
+.result, .bmi-message{
+  color: red;
+  font-weight: bold;
+}

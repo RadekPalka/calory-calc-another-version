@@ -49,17 +49,19 @@ export default function BMI({height, weight, setHeight, setWeight}){
     }, [result])
 
     return(
-        <form onSubmit={handleFormSubmit}>
+        <div>
+            <h2>BMI - Body Mass Index</h2>
+            <form onSubmit={handleFormSubmit}>
 
-            <p>Wpisz swoją wagę w kilogramach</p>
-            <input type="number" value={weight} onChange={handleWeightInput} />
-            <p>Wpisz swój wzrost w centymetrach</p>
-            <input type="number" value={height} onChange={handleHeightInput} />
+                <p>Wpisz swoją wagę w kilogramach</p>
+                <input type="number" value={weight} onChange={handleWeightInput} />
+                <p>Wpisz swój wzrost w centymetrach</p>
+                <input type="number" value={height} onChange={handleHeightInput} />
 
-            <button>Oblicz BMI</button>
-            <p className="result">{result  && `Twoje bmi to ${result}`}</p>
-            <p className="bmi-message">{bmiMessage}</p>
-        </form>
-
+                <button>Oblicz BMI</button>
+                <p className="result">{result  && `Twoje bmi to ${result}`}</p>
+                <p className="bmi-message">{bmiMessage}</p>
+            </form>
+        </div>
     )
 }

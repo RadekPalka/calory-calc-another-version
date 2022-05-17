@@ -24,26 +24,29 @@ export default function PPM(props){
 
     }
     return(
-        <form onSubmit={handleFormSubmit}>
+        <div>
+            <h2>PPM - Podstawowa przemiana materii</h2>
+            <form onSubmit={handleFormSubmit}>
 
-            <p>Wpisz swoją wagę w kilogramach</p>
-            <input type="number" value={weight} onChange={handleWeightInput} />
-            <p>Wpisz swój wzrost w centymetrach</p>
-            <input type="number" value={height} onChange={handleHeightInput} />
-            <p>Wpisz swój wiek w latach</p>
-            <input type="number" value={age} onChange={handleAgeInput} />
-            <p>Podaj swoją płeć</p>
-            <select name="sex" onChange={handleSelectOption} >
-                <option value="">--Wybierz opcję--</option>
-                <option value="woman">Kobieta</option>
-                <option value="man">Mężczyzna</option>
+                <p>Wpisz swoją wagę w kilogramach</p>
+                <input type="number" value={weight} onChange={handleWeightInput} />
+                <p>Wpisz swój wzrost w centymetrach</p>
+                <input type="number" value={height} onChange={handleHeightInput} />
+                <p>Wpisz swój wiek w latach</p>
+                <input type="number" value={age} onChange={handleAgeInput} />
+                <p>Podaj swoją płeć</p>
+                <select name="sex" onChange={handleSelectOption} value={sex}>
+                    <option value="">--Wybierz opcję--</option>
+                    <option value="woman">Kobieta</option>
+                    <option value="man">Mężczyzna</option>
 
-            </select>
+                </select>
 
 
-            <button>Oblicz PPM</button>
-            {result && <p>Twoje PPM wynosi {result} kcal</p>}
+                <button>Oblicz PPM</button>
+                {result && <p className="result">Twoje PPM wynosi {result} kcal</p>}
 
-        </form>
+            </form>
+        </div>
     )
 }

@@ -7,7 +7,7 @@ export default function Header(props){
             <nav>
                 <ul>
                     {props.links.map((el, index)=> <li key ={`${index}-${el.title}`}>
-                        <Link to={el.link}>{el.title.toUpperCase()}</Link>
+                        <Link to={el.link} >{el.title.toUpperCase()}</Link>
                         </li>
 
                     )}
